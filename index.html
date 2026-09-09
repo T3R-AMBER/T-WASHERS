@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="T Washers provides professional residential and commercial exterior cleaning and power washing services in College Station, Texas. Call 979-595-4496.">
+  <title>T Washers | Power Washing & Exterior Cleaning</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <img class="logo" src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Before & After</a>
+        <a href="#contact">Contact</a>
+        <a class="button small" href="#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Professional Exterior Cleaning</p>
+          <h1>Make your property look new again.</h1>
+          <p class="lead">T Washers provides dependable residential and commercial exterior cleaning with professional results.</p>
+          <div class="actions">
+            <a class="button" href="tel:9795954496">Call 979-595-4496</a>
+            <a class="button outline" href="#services">View Services</a>
+          </div>
+        </div>
+        <div class="logo-card">
+          <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers logo">
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div><strong>Easy</strong><span>Contact</span></div>
+        <div><strong>Fast</strong><span>Response</span></div>
+        <div><strong>Quality</strong><span>Workmanship</span></div>
+        <div><strong>Local</strong><span>Service</span></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Services</p>
+        <h2>Exterior cleaning for homes and businesses</h2>
+        <div class="cards">
+          <article><h3>House Washing</h3><p>Refresh siding and exterior surfaces by removing dirt and grime.</p></article>
+          <article><h3>Driveways & Concrete</h3><p>Clean driveways, sidewalks, walkways, and other concrete surfaces.</p></article>
+          <article><h3>Patios & Outdoor Areas</h3><p>Bring life back to patios, porches, and outdoor living spaces.</p></article>
+          <article><h3>Fences</h3><p>Remove weathered buildup from fencing and similar exterior areas.</p></article>
+          <article><h3>Commercial Properties</h3><p>Exterior cleaning for storefronts, offices, and commercial sites.</p></article>
+          <article><h3>Custom Cleaning</h3><p>Have something else that needs cleaning? Contact us for a custom quote.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section dark">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow">Why T Washers</p>
+          <h2>Professional service without the runaround.</h2>
+          <p>We focus on dependable communication, careful work, and results you can see.</p>
+          <div class="checks">
+            <span>✓ Clear communication</span>
+            <span>✓ Respect for your property</span>
+            <span>✓ Professional equipment</span>
+            <span>✓ Residential & commercial</span>
+          </div>
+        </div>
+        <div class="about-logo">
+          <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Before & After</p>
+        <h2>Results speak for themselves.</h2>
+        <p class="muted">These placeholders are ready for your real project photos.</p>
+        <div class="gallery">
+          <div><span>BEFORE</span><strong>Project Photo</strong></div>
+          <div class="after"><span>AFTER</span><strong>Project Photo</strong></div>
+          <div><span>BEFORE</span><strong>Project Photo</strong></div>
+          <div class="after"><span>AFTER</span><strong>Project Photo</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap contact-simple">
+        <p class="eyebrow">Contact T Washers</p>
+        <h2>Need exterior cleaning?</h2>
+        <p class="muted">Call or email T Washers and we’ll be happy to talk with you about your property.</p>
+
+        <div class="service-area">
+          <span>Service Area</span>
+          <strong>College Station, TX</strong>
+        </div>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:9795954496">
+            <span class="contact-label">Phone</span>
+            <strong>979-595-4496</strong>
+            <small>Tap to call</small>
+          </a>
+
+          <a class="contact-card" href="mailto:twashersTX@gmail.com">
+            <span class="contact-label">Email</span>
+            <strong>twashersTX@gmail.com</strong>
+            <small>Tap to email</small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer">
+      <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
+      <span>© T Washers — Professional Exterior Cleaning</span>
+    </div>
+  </footer>
+</body>
+</html>
