@@ -43,3 +43,128 @@ footer{background:#0b0d1a;color:#c1cada;padding:25px 0}.footer{display:flex;alig
 .photo-gallery figure.wide img{height:auto;max-height:720px;object-fit:contain;background:#f6f8fa}
 .photo-gallery figcaption{padding:14px 16px;color:var(--navy);font-weight:800}
 @media(max-width:700px){.photo-gallery{grid-template-columns:1fr}.photo-gallery figure.wide{grid-column:auto}.photo-gallery img{height:auto}}
+
+/* ===== T WASHERS CLEAN DESIGN UPDATE ===== */
+
+header{
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid rgba(17,19,40,.08);
+}
+.nav-simple{
+  min-height:70px;
+  justify-content:flex-end;
+}
+.nav-spacer{flex:1}
+.nav-simple .button.small{
+  margin-left:auto;
+  padding:12px 20px;
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 78% 30%, rgba(12,169,223,.17), transparent 25%),
+    linear-gradient(135deg,#f7fcff 0%,#e8f7fc 55%,#dff4fb 100%);
+  padding:72px 0;
+}
+.hero-grid{
+  grid-template-columns:1.12fr .88fr;
+  gap:72px;
+}
+.hero h1{
+  max-width:700px;
+  font-size:clamp(50px,6vw,82px);
+  letter-spacing:-.03em;
+}
+.hero .lead{
+  max-width:680px;
+  font-size:18px;
+}
+.logo-card.logo-watermark{
+  background:transparent;
+  box-shadow:none;
+  padding:10px;
+  border-radius:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.logo-card.logo-watermark img{
+  opacity:.54;
+  filter:saturate(.95);
+  width:100%;
+  max-width:520px;
+}
+
+.services-heading{
+  text-align:center;
+  margin-bottom:42px;
+}
+.services-heading h2{
+  font-size:clamp(54px,7vw,84px);
+  letter-spacing:.03em;
+  margin:0;
+}
+.services-heading h2::after{
+  content:"";
+  display:block;
+  width:110px;
+  height:4px;
+  border-radius:10px;
+  background:var(--blue);
+  margin:16px auto 0;
+}
+
+#services{
+  padding-top:82px;
+}
+#services .cards{
+  margin-top:0;
+}
+
+.cards article{
+  position:relative;
+  overflow:hidden;
+  min-height:185px;
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  box-shadow:0 10px 28px rgba(17,19,40,.06);
+}
+.cards article::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:5px;
+  height:100%;
+  background:linear-gradient(var(--blue),var(--deep));
+}
+
+.photo-gallery{
+  margin-top:36px;
+}
+.photo-gallery figure{
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.photo-gallery figure:hover{
+  transform:translateY(-3px);
+  box-shadow:0 18px 38px rgba(17,19,40,.12);
+}
+
+.contact-simple{
+  max-width:900px;
+}
+.contact-simple h2{
+  font-size:clamp(42px,5vw,62px);
+}
+.contact-cards{
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media(max-width:850px){
+  .nav-simple{min-height:64px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .logo-card.logo-watermark img{max-width:390px}
+}

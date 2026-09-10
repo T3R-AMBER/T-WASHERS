@@ -9,15 +9,9 @@
 </head>
 <body>
   <header>
-    <div class="wrap nav">
-      <img class="logo" src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Before & After</a>
-        <a href="#contact">Contact</a>
-        <a class="button small" href="#contact">Contact Us</a>
-      </nav>
+    <div class="wrap nav nav-simple">
+      <div class="nav-spacer" aria-hidden="true"></div>
+      <a class="button small" href="#contact">Contact Us</a>
     </div>
   </header>
 
@@ -25,33 +19,25 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Professional Exterior Cleaning</p>
-          <h1>Make your property look new again.</h1>
-          <p class="lead">T Washers is a professional power washing company serving Bryan/College Station and surrounding areas. We provide residential and commercial cleaning for homes, businesses, fleets, concrete, roofs, and more.</p>
+          <p class="eyebrow">Bryan / College Station & Surrounding Areas</p>
+          <h1>Cleaner properties. Brighter results.</h1>
+          <p class="lead">Professional power washing for residential, commercial, and fleet customers throughout Bryan/College Station and surrounding areas.</p>
           <div class="actions">
             <a class="button" href="tel:9795954496">Call 979-595-4496</a>
             <a class="button outline" href="#services">View Services</a>
           </div>
         </div>
-        <div class="logo-card">
+        <div class="logo-card logo-watermark">
           <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers logo">
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="wrap stats-grid">
-        <div><strong>Easy</strong><span>Contact</span></div>
-        <div><strong>Fast</strong><span>Response</span></div>
-        <div><strong>Quality</strong><span>Workmanship</span></div>
-        <div><strong>Local</strong><span>Service</span></div>
-      </div>
-    </section>
-
     <section id="services" class="section">
       <div class="wrap">
-        <p class="eyebrow">Services</p>
-        <h2>Exterior cleaning for homes and businesses</h2>
+        <div class="services-heading">
+          <h2>SERVICES</h2>
+        </div>
         <div class="cards">
           <article><h3>House Washing</h3><p>Professional exterior washing to remove dirt, mildew, algae, and buildup from your home.</p></article>
           <article><h3>Parking Lots & Concrete</h3><p>Cleaning for parking lots, sidewalks, driveways, walkways, and other concrete surfaces.</p></article>
@@ -59,25 +45,6 @@
           <article><h3>Commercial Buildings</h3><p>Professional exterior cleaning for storefronts, offices, facilities, and commercial properties.</p></article>
           <article><h3>Fleet Cleaning</h3><p>Power washing for trucks, trailers, tanks, equipment, and commercial fleets.</p></article>
           <article><h3>Residential & More</h3><p>Patios, fences, outdoor areas, and other exterior surfaces. Contact us about your cleaning needs.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section dark">
-      <div class="wrap two-col">
-        <div>
-          <p class="eyebrow">Why T Washers</p>
-          <h2>Professional service without the runaround.</h2>
-          <p>We focus on dependable communication, careful work, and results you can see.</p>
-          <div class="checks">
-            <span>✓ Clear communication</span>
-            <span>✓ Respect for your property</span>
-            <span>✓ Professional equipment</span>
-            <span>✓ Residential & commercial</span>
-          </div>
-        </div>
-        <div class="about-logo">
-          <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
         </div>
       </div>
     </section>
@@ -105,7 +72,7 @@
     <section id="contact" class="section contact">
       <div class="wrap contact-simple">
         <p class="eyebrow">Contact T Washers</p>
-        <h2>Need exterior cleaning?</h2>
+        <h2>Ready to get it cleaned?</h2>
         <p class="muted">Call or email T Washers and we’ll be happy to talk with you about your property.</p>
 
         <div class="service-area">
