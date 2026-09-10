@@ -4,104 +4,153 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="T Washers is a professional power washing company serving Bryan, College Station, and surrounding areas. Residential and commercial services include house washing, parking lots, roofs, buildings, fleet cleaning, and more. Call 979-595-4496.">
-  <title>T Washers | Power Washing & Exterior Cleaning</title>
+  <title>T Washers | Power Washing | Bryan / College Station, TX</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <header>
-    <div class="wrap nav nav-simple">
-      <div class="nav-spacer" aria-hidden="true"></div>
-      <a class="button small" href="#contact">Contact Us</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <div></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Before & After</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <div class="location-line">BRYAN/COLLEGE STATION & SURROUNDING AREAS</div>
+        <h1>
+          <span class="dark-line">CLEANER</span>
+          <span class="dark-line">PROPERTIES</span>
+          <span class="blue-line">BRIGHTER</span>
+          <span class="blue-line">RESULTS</span>
+        </h1>
+        <div class="hero-tags">RESIDENTIAL &nbsp; | &nbsp; COMMERCIAL &nbsp; | &nbsp; FLEET</div>
+
+        <div class="hero-actions">
+          <a class="hero-btn primary" href="tel:9795954496">☎ &nbsp; Call 979-595-4496</a>
+          <a class="hero-btn secondary" href="mailto:twashersTX@gmail.com">✉ &nbsp; twashersTX@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="hero-logo-panel">
+        <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Bryan / College Station & Surrounding Areas</p>
-          <h1>Cleaner properties. Brighter results.</h1>
-          <p class="lead">Professional power washing for residential, commercial, and fleet customers throughout Bryan/College Station and surrounding areas.</p>
-          <div class="actions">
-            <a class="button" href="tel:9795954496">Call 979-595-4496</a>
-            <a class="button outline" href="#services">View Services</a>
-          </div>
-        </div>
-        <div class="logo-card logo-watermark">
-          <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers logo">
-        </div>
+  <section id="services" class="section services-section">
+    <div class="wrap">
+      <div class="section-title">
+        <span class="rule"></span>
+        <h2>SERVICES</h2>
+        <span class="rule"></span>
       </div>
-    </section>
+      <div class="section-subtitle">RESIDENTIAL &nbsp; | &nbsp; COMMERCIAL &nbsp; | &nbsp; FLEET</div>
 
-    <section id="services" class="section">
-      <div class="wrap">
-        <div class="services-heading">
-          <h2>SERVICES</h2>
-        </div>
-        <div class="cards">
-          <article><h3>House Washing</h3><p>Professional exterior washing to remove dirt, mildew, algae, and buildup from your home.</p></article>
-          <article><h3>Parking Lots & Concrete</h3><p>Cleaning for parking lots, sidewalks, driveways, walkways, and other concrete surfaces.</p></article>
-          <article><h3>Roof Cleaning</h3><p>Exterior roof cleaning to improve appearance and remove unsightly organic buildup.</p></article>
-          <article><h3>Commercial Buildings</h3><p>Professional exterior cleaning for storefronts, offices, facilities, and commercial properties.</p></article>
-          <article><h3>Fleet Cleaning</h3><p>Power washing for trucks, trailers, tanks, equipment, and commercial fleets.</p></article>
-          <article><h3>Residential & More</h3><p>Patios, fences, outdoor areas, and other exterior surfaces. Contact us about your cleaning needs.</p></article>
-        </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/building-wash-before-after.jpg') }}" alt="House washing">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>House Washing</h3><p>Restore curb appeal</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/commercial-concrete-before-after.jpg') }}" alt="Parking lot and concrete cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Parking Lots & Concrete</h3><p>Clean. Safe. Professional.</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/roof-cleaning-before-after.jpg') }}" alt="Roof cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Roofs</h3><p>Remove dirt, algae & stains</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/commercial-walkway-after.jpg') }}" alt="Commercial building cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Commercial Buildings</h3><p>Make a great first impression</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/tanker-cleaning-side-before-after.jpg') }}" alt="Fleet cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Fleet Cleaning</h3><p>Keep equipment looking its best</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/fence-cleaning-before-after.jpg') }}" alt="Fence cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Fences</h3><p>Remove mildew, dirt & discoloration</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/driveway-cleaning-before-after.jpg') }}" alt="Driveway and walkway cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Driveways & Walkways</h3><p>Bring back the original look</p></div>
+        </article>
+
+        <article class="service-card">
+          <img src="{{ url_for('static', filename='gallery/patio-cleaning-before-after.jpg') }}" alt="Patio and outdoor area cleaning">
+          <div class="card-shade"></div>
+          <div class="card-text"><h3>Patios & Outdoor Areas</h3><p>Enjoy a cleaner space</p></div>
+        </article>
       </div>
-    </section>
 
-    <section id="gallery" class="section">
-      <div class="wrap">
-        <p class="eyebrow">Our Work</p>
-        <h2>Real results from T Washers.</h2>
-        <p class="muted">From residential concrete and fences to commercial buildings, trucks, and tanks, see the difference professional cleaning can make.</p>
-        <div class="photo-gallery">
-          <figure><img src="{{ url_for('static', filename='gallery/commercial-walkway-before.jpg') }}" alt="Commercial walkway before power washing"><figcaption>Commercial Concrete — Before</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/commercial-walkway-after.jpg') }}" alt="Commercial walkway after power washing"><figcaption>Commercial Concrete — After</figcaption></figure>
-          <figure class="wide"><img src="{{ url_for('static', filename='gallery/tanker-cleaning-side-before-after.jpg') }}" alt="Tanker fleet cleaning before and after"><figcaption>Fleet & Tank Cleaning</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/driveway-cleaning-before-after.jpg') }}" alt="Driveway cleaning before and after"><figcaption>Driveways & Concrete</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/fence-cleaning-before-after.jpg') }}" alt="Fence cleaning before and after"><figcaption>Fence Cleaning</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/roof-cleaning-before-after.jpg') }}" alt="Roof cleaning before and after"><figcaption>Roof Cleaning</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/building-wash-before-after.jpg') }}" alt="Building exterior cleaning before and after"><figcaption>Building Washing</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/commercial-concrete-before-after.jpg') }}" alt="Commercial concrete cleaning before and after"><figcaption>Commercial Cleaning</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/fleet-truck-cleaning-before-after.jpg') }}" alt="Commercial truck cleaning before and after"><figcaption>Fleet Cleaning</figcaption></figure>
-          <figure><img src="{{ url_for('static', filename='gallery/memorial-cleaning-before-after.jpg') }}" alt="Stone cleaning before and after"><figcaption>Specialty Cleaning</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="wrap contact-simple">
-        <p class="eyebrow">Contact T Washers</p>
-        <h2>Ready to get it cleaned?</h2>
-        <p class="muted">Call or email T Washers and we’ll be happy to talk with you about your property.</p>
-
-        <div class="service-area">
-          <span>Service Area</span>
-          <strong>Bryan / College Station & Surrounding Areas</strong>
-        </div>
-
-        <div class="contact-cards">
-          <a class="contact-card" href="tel:9795954496">
-            <span class="contact-label">Phone</span>
-            <strong>979-595-4496</strong>
-            <small>Tap to call</small>
-          </a>
-
-          <a class="contact-card" href="mailto:twashersTX@gmail.com">
-            <span class="contact-label">Email</span>
-            <strong>twashersTX@gmail.com</strong>
-            <small>Tap to email</small>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer">
-      <img src="{{ url_for('static', filename='t-washers-logo.png') }}" alt="T Washers">
-      <span>© T Washers — Professional Exterior Cleaning</span>
+      <div class="more-line"><span></span>AND MORE — JUST ASK!<span></span></div>
     </div>
-  </footer>
+  </section>
+
+  <section id="gallery" class="section gallery-section">
+    <div class="wrap">
+      <div class="section-title gallery-heading">
+        <span class="rule"></span>
+        <h2>BEFORE & AFTER</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="section-subtitle">REAL RESULTS. REAL DIFFERENCE.</div>
+
+      <div class="before-after-grid">
+        <figure><img src="{{ url_for('static', filename='gallery/commercial-walkway-before.jpg') }}" alt="Commercial concrete before cleaning"><figcaption>BEFORE</figcaption></figure>
+        <figure><img src="{{ url_for('static', filename='gallery/commercial-walkway-after.jpg') }}" alt="Commercial concrete after cleaning"><figcaption>AFTER</figcaption></figure>
+        <figure><img src="{{ url_for('static', filename='gallery/tanker-cleaning-before-after.jpg') }}" alt="Fleet tank cleaning before and after"><figcaption>FLEET</figcaption></figure>
+        <figure><img src="{{ url_for('static', filename='gallery/memorial-cleaning-before-after.jpg') }}" alt="Stone cleaning before and after"><figcaption>STONE</figcaption></figure>
+        <figure><img src="{{ url_for('static', filename='gallery/fence-cleaning-before-after.jpg') }}" alt="Fence cleaning before and after"><figcaption>FENCE</figcaption></figure>
+        <figure><img src="{{ url_for('static', filename='gallery/driveway-cleaning-before-after.jpg') }}" alt="Driveway cleaning before and after"><figcaption>CONCRETE</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="footer">
+  <div class="wrap footer-grid">
+    <a href="tel:9795954496" class="footer-item">
+      <span class="footer-icon">☎</span>
+      <span><strong>979-595-4496</strong><small>Call or Text</small></span>
+    </a>
+    <a href="mailto:twashersTX@gmail.com" class="footer-item">
+      <span class="footer-icon">✉</span>
+      <span><strong>twashersTX@gmail.com</strong><small>We'd love to hear from you</small></span>
+    </a>
+    <div class="footer-item">
+      <span class="footer-icon">●</span>
+      <span><strong>Bryan/College Station, TX</strong><small>and surrounding areas</small></span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    RESIDENTIAL &nbsp; | &nbsp; COMMERCIAL &nbsp; | &nbsp; FLEET &nbsp; | &nbsp; RELIABLE &nbsp; | &nbsp; PROFESSIONAL &nbsp; | &nbsp; LOCAL
+  </div>
+</footer>
+
 </body>
 </html>

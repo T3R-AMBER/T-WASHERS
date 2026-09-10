@@ -1,18 +1,18 @@
-T WASHERS CLEAN DESIGN UPDATE
+T WASHERS MOCKUP-MATCH UPDATE
 
-Changes in this version:
-- Removed the tiny logo from the top header
-- Simplified top navigation to Contact Us
-- Removed the extra top stats strip
-- Changed hero headline to "Cleaner properties. Brighter results."
-- Made the large hero logo translucent
-- Made SERVICES large and centered
-- Removed "Exterior cleaning for homes and businesses"
-- Removed the entire "Why T Washers" section
-- Kept the real T Washers project photos and service categories
-- Kept phone, email, and Bryan/College Station service area
-- No quote form
+This version was rebuilt to closely match the approved mockup:
+- Large stacked navy/blue hero headline
+- Bryan/College Station location line
+- Residential / Commercial / Fleet line
+- Phone and email buttons in the hero
+- Large translucent logo over the hero image
+- Large centered SERVICES heading
+- Photo-based service cards
+- "And More — Just Ask!" line
+- Before & After strip using real T Washers work photos
+- Dark blue contact footer with phone, email and service area
+- No "Why T Washers" section
 
-Deployment:
-Upload the CONTENTS of this folder into the existing T Washers GitHub repository,
-replacing the matching files. Commit the changes. Railway should rebuild automatically.
+DEPLOY:
+Upload the CONTENTS of this folder to the existing T Washers GitHub repo,
+replace matching files, and commit. Railway should auto-deploy.
