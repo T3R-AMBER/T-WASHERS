@@ -15,8 +15,13 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#gallery">Before & After</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="#contact">Contact Us</a>
+      <div class="contact-menu">
+        <button class="nav-cta contact-toggle" type="button" aria-expanded="false">Contact Us ▾</button>
+        <div class="contact-dropdown">
+          <a href="tel:9795954496">☎ Call 979-595-4496</a>
+          <a href="mailto:twashersTX@gmail.com">✉ Email T Washers</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -119,13 +124,55 @@
       </div>
       <div class="section-subtitle">REAL RESULTS. REAL DIFFERENCE.</div>
 
-      <div class="before-after-grid">
-        <figure><img src="{{ url_for('static', filename='gallery/commercial-walkway-before.jpg') }}" alt="Commercial concrete before cleaning"><figcaption>BEFORE</figcaption></figure>
-        <figure><img src="{{ url_for('static', filename='gallery/commercial-walkway-after.jpg') }}" alt="Commercial concrete after cleaning"><figcaption>AFTER</figcaption></figure>
-        <figure><img src="{{ url_for('static', filename='gallery/tanker-cleaning-before-after.jpg') }}" alt="Fleet tank cleaning before and after"><figcaption>FLEET</figcaption></figure>
-        <figure><img src="{{ url_for('static', filename='gallery/memorial-cleaning-before-after.jpg') }}" alt="Stone cleaning before and after"><figcaption>STONE</figcaption></figure>
-        <figure><img src="{{ url_for('static', filename='gallery/fence-cleaning-before-after.jpg') }}" alt="Fence cleaning before and after"><figcaption>FENCE</figcaption></figure>
-        <figure><img src="{{ url_for('static', filename='gallery/driveway-cleaning-before-after.jpg') }}" alt="Driveway cleaning before and after"><figcaption>CONCRETE</figcaption></figure>
+      <div class="full-gallery">
+        <figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/commercial-walkway-after.jpg') }}" data-caption="Commercial Walkway — After">
+          <img src="{{ url_for('static', filename='gallery/commercial-walkway-after.jpg') }}" alt="Commercial Walkway — After">
+          <figcaption>Commercial Walkway — After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/commercial-walkway-before.jpg') }}" data-caption="Commercial Walkway — Before">
+          <img src="{{ url_for('static', filename='gallery/commercial-walkway-before.jpg') }}" alt="Commercial Walkway — Before">
+          <figcaption>Commercial Walkway — Before<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/tanker-cleaning-before-after.jpg') }}" data-caption="Tanker Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/tanker-cleaning-before-after.jpg') }}" alt="Tanker Cleaning — Before & After">
+          <figcaption>Tanker Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/tanker-cleaning-side-before-after.jpg') }}" data-caption="Fleet Tank Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/tanker-cleaning-side-before-after.jpg') }}" alt="Fleet Tank Cleaning — Before & After">
+          <figcaption>Fleet Tank Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/memorial-cleaning-before-after.jpg') }}" data-caption="Stone Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/memorial-cleaning-before-after.jpg') }}" alt="Stone Cleaning — Before & After">
+          <figcaption>Stone Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/roof-cleaning-before-after.jpg') }}" data-caption="Roof Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/roof-cleaning-before-after.jpg') }}" alt="Roof Cleaning — Before & After">
+          <figcaption>Roof Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/patio-cleaning-before-after.jpg') }}" data-caption="Patio Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/patio-cleaning-before-after.jpg') }}" alt="Patio Cleaning — Before & After">
+          <figcaption>Patio Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/driveway-cleaning-before-after.jpg') }}" data-caption="Driveway Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/driveway-cleaning-before-after.jpg') }}" alt="Driveway Cleaning — Before & After">
+          <figcaption>Driveway Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/fence-cleaning-before-after.jpg') }}" data-caption="Fence Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/fence-cleaning-before-after.jpg') }}" alt="Fence Cleaning — Before & After">
+          <figcaption>Fence Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/fleet-truck-cleaning-before-after.jpg') }}" data-caption="Fleet Truck Cleaning — Before & After">
+          <img src="{{ url_for('static', filename='gallery/fleet-truck-cleaning-before-after.jpg') }}" alt="Fleet Truck Cleaning — Before & After">
+          <figcaption>Fleet Truck Cleaning — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/building-wash-before-after.jpg') }}" data-caption="Building Washing — Before & After">
+          <img src="{{ url_for('static', filename='gallery/building-wash-before-after.jpg') }}" alt="Building Washing — Before & After">
+          <figcaption>Building Washing — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
+<figure class="lightbox-item" data-full="{{ url_for('static', filename='gallery/commercial-concrete-before-after.jpg') }}" data-caption="Commercial Concrete — Before & After">
+          <img src="{{ url_for('static', filename='gallery/commercial-concrete-before-after.jpg') }}" alt="Commercial Concrete — Before & After">
+          <figcaption>Commercial Concrete — Before & After<span>Click to enlarge</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -151,6 +198,80 @@
     RESIDENTIAL &nbsp; | &nbsp; COMMERCIAL &nbsp; | &nbsp; FLEET &nbsp; | &nbsp; RELIABLE &nbsp; | &nbsp; PROFESSIONAL &nbsp; | &nbsp; LOCAL
   </div>
 </footer>
+
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <button class="lightbox-prev" type="button" aria-label="Previous image">‹</button>
+  <div class="lightbox-content">
+    <img id="lightboxImage" alt="">
+    <div id="lightboxCaption"></div>
+  </div>
+  <button class="lightbox-next" type="button" aria-label="Next image">›</button>
+</div>
+
+<script>
+  const contactToggle = document.querySelector('.contact-toggle');
+  const contactMenu = document.querySelector('.contact-menu');
+  if (contactToggle && contactMenu) {
+    contactToggle.addEventListener('click', () => {
+      const open = contactMenu.classList.toggle('open');
+      contactToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', (e) => {
+      if (!contactMenu.contains(e.target)) {
+        contactMenu.classList.remove('open');
+        contactToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  const items = Array.from(document.querySelectorAll('.lightbox-item'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  let activeIndex = 0;
+
+  function showImage(index) {
+    activeIndex = (index + items.length) % items.length;
+    const item = items[activeIndex];
+    lightboxImage.src = item.dataset.full;
+    lightboxImage.alt = item.dataset.caption || 'T Washers project photo';
+    lightboxCaption.textContent = item.dataset.caption || '';
+  }
+
+  function openLightbox(index) {
+    showImage(index);
+    lightbox.classList.add('show');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('show');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('no-scroll');
+  }
+
+  items.forEach((item, index) => {
+    item.addEventListener('click', () => openLightbox(index));
+  });
+
+  document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  document.querySelector('.lightbox-prev').addEventListener('click', () => showImage(activeIndex - 1));
+  document.querySelector('.lightbox-next').addEventListener('click', () => showImage(activeIndex + 1));
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('show')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showImage(activeIndex - 1);
+    if (e.key === 'ArrowRight') showImage(activeIndex + 1);
+  });
+</script>
 
 </body>
 </html>
