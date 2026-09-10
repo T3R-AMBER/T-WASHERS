@@ -1,14 +1,17 @@
-T WASHERS INTERACTIVE UPDATE
+T WASHERS MOBILE + GALLERY CLEANUP
 
 Changes:
-- Contact Us button now opens clickable Call and Email options
-- Call button uses 979-595-4496
-- Email button uses twashersTX@gmail.com
-- Added every before/after image supplied for the site
-- Every project photo can be clicked to open a large lightbox
-- Lightbox supports Previous / Next arrows, keyboard arrows, and Escape to close
-- Keeps the approved mockup-style design
+- Removed all labels/captions from the Before & After section
+- Gallery now shows pictures only
+- Photos are still clickable and open larger
+- Removed visible captions inside the enlarged-photo viewer
+- Improved mobile hero spacing and headline sizing
+- Improved mobile button spacing
+- Improved section heading/subtitle spacing
+- Improved service-card text spacing
+- Improved footer readability on small screens
+- Preserved Contact Us call/email dropdown
 
 DEPLOY:
-Upload the CONTENTS of this folder into the existing T Washers GitHub repository,
-replace the matching files, and commit. Railway should automatically deploy it.
+Upload the CONTENTS of this folder to the existing T Washers GitHub repository,
+replace matching files, and commit. Railway should auto-deploy.
